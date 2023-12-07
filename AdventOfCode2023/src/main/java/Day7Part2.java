@@ -135,14 +135,11 @@ public class Day7Part2 {
 
     private static boolean isThreeOfAKind(Map<Character,Integer> map) {
         for(Map.Entry<Character,Integer> entry : map.entrySet()){
-//            if(count+map.getOrDefault('J',0) == 3){
-//                return true;
-//            }
             if(entry.getKey()!='J' && entry.getValue()+map.getOrDefault('J',0) == 3){
                 return true;
             }
             if (entry.getKey()=='J' && entry.getValue()==3){
-                return true;
+                return true; // won't ever be executed as this makes five/four of a kind
             }
         }
         return false;
@@ -158,7 +155,7 @@ public class Day7Part2 {
                 return true;
             }
             if (entry.getKey()=='J' && entry.getValue()==4){
-                return true;
+                return true; // won't ever be executed as this makes five of a kind
             }
         }
         return false;
