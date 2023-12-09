@@ -51,5 +51,5 @@ sample input
 10 13 16 21 30 45
 end
 
-ans - 2
+ans - 114
 * */
