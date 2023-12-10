@@ -134,5 +134,5 @@ sample input
 ...........
 end
 
-ans - 8
+ans - 23
 * */
